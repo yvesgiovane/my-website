@@ -3,42 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yves Giovane - Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home - Yves Giovane Photography</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <h1>Yves Giovane</h1>
-        </div>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="vertical-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Commercial</a>
+                    <ul class="dropdown-content">
+                        <li><a href="commercial.html" onclick="showFabriqueGallery(event)">Fabrique</a></li>
+                        <li><a href="commercial.html" onclick="showSN1604Gallery(event)">SN1604</a></li>
+                    </ul>
+                </li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="info-contact.html">Info & Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-container">
-            <!-- Portfolio items here -->
-            <div class="portfolio-item">
-                <img src="assets/img/project1.jpg" alt="Project 1">
-            </div>
-            <!-- More items -->
+    <main>
+        <div class="hero">
+            <img src="assets/images/main-visual.jpg" alt="Main Visual" class="main-visual">
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Yves Giovane. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>

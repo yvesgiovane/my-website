@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial - Yves Giovane Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="vertical-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Commercial</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" onclick="showFabriqueGallery(event)">Fabrique</a></li>
+                        <li><a href="#" onclick="showSN1604Gallery(event)">SN1604</a></li>
+                    </ul>
+                </li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="info-contact.html">Info & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="gallery">
+                <img src="assets/images/fabrique-visual1.jpg" alt="Fabrique Visual 1" class="fabrique-visual" style="display:none;">
+                <img src="assets/images/fabrique-visual2.jpg" alt="Fabrique Visual 2" class="fabrique-visual" style="display:none;">
+                <img src="assets/images/fabrique-visual3.jpg" alt="Fabrique Visual 3" class="fabrique-visual" style="display:none;">
+                <img src="assets/images/sn1604-visual1.jpg" alt="SN1604 Visual 1" class="sn1604-visual" style="display:none;">
+                <img src="assets/images/sn1604-visual2.jpg" alt="SN1604 Visual 2" class="sn1604-visual" style="display:none;">
+                <img src="assets/images/sn1604-visual3.jpg" alt="SN1604 Visual 3" class="sn1604-visual" style="display:none;">
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
